@@ -5,23 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phones</title>
     <style>
-        h1
+        .cont
         {
-            padding: 5%;
+            background-color: white;
         }
+        body {
+            background-image: url("pic2.jpeg");
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        h1 {
+            font-size: 2.5rem;
+            color:black;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            max-width: 90%;
+            height: auto;
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05); /* Slight zoom effect on hover */
+        }
+
+        area {
+            cursor: pointer;
+        }
+
+        a {
+            text-decoration: none;
+            color: #3498db;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        p
+        {
+            color:white;
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+            letter-spacing: 2px; 
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            position: relative;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        a:hover {
+            color: #e74c3c;
+        }
+
     </style>
 </head>
 <body>
-    <h1 > Iphone 13 </h1>
+    
+    <h1>IPhone 13</h1>
     <img src="https://itronics.in/wp-content/uploads/2021/09/iphone-13-pink-select-2021.png" alt="iphone" usemap="#mappe">
+    <p><b>Touch the mobile parts to know about that bro..</b></p>
     <map name="mappe">
-        <area shape="poly"coords="168,294,167,304,168,311,173,315,177,321,185,321,194,323,202,316,205,309,204,301,204,293,202,287,195,286,196,277,191,280,186,282,181,284,175,286" alt="camera" href="https://www.crowdspring.com/blog/apple-logo/#:~:text=The%20brand%20name%20was%20inspired,day%20keeps%20the%20doctor%20away.%E2%80%9D">
-        <area shape="circle"coords="121,137,17" alt ="camera1" href="https://en.wikipedia.org/wiki/Camera">
-        <area shape="circle" coords="155,172,16" alt ="cam2" href="https://en.wikipedia.org/wiki/Camera">
+        <area shape="poly" coords="168,294,167,304,168,311,173,315,177,321,185,321,194,323,202,316,205,309,204,301,204,293,202,287,195,286,196,277,191,280,186,282,181,284,175,286" alt="camera" href="https://www.crowdspring.com/blog/apple-logo/#:~:text=The%20brand%20name%20was%20inspired,day%20keeps%20the%20doctor%20away.%E2%80%9D">
+        <area shape="circle" coords="121,137,17" alt="camera1" href="https://en.wikipedia.org/wiki/Camera">
+        <area shape="circle" coords="155,172,16" alt="cam2" href="https://en.wikipedia.org/wiki/Camera">
         <area shape="rect" coords="281,111,319,126" alt="selfiecam" href="https://en.wikipedia.org/wiki/Front-facing_camera">
         <area shape="circle" coords="160,131,8" alt="flash" href="https://en.wikipedia.org/wiki/Flashlight">
         <area shape="poly" coords="284,128,284,142,286,153,286,162,286,174,285,193,285,208,286,237,286,251,286,285,287,301,285,342,285,365,285,402,285,421,286,438,286,453,286,465,284,482,277,495,285,501,294,503,303,503,315,504,326,504,340,504,357,504,369,496,374,486,381,460,381,449,380,431,380,409,381,393,381,349,381,307,381,267,381,229,381,174,380,124,369,112,357,105,341,103,326,103,308,103,290,104,275,105,267,105,275,113" alt="touch screen" href="https://en.wikipedia.org/wiki/Touchscreen">
     </map>
+
 </body>
 </html>
-

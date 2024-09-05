@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<styl>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Price Filter</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: url("p2.jpeg");
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa; /* Light pastel color from the image */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .container {
+            border-radius: 10px;
+            max-width: 1000px;
+            text-align: center;
+        }
+        
+        h1 {
+            color:hotpink;
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+            letter-spacing: 2px; 
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            position: relative;
+            transition: color 0.3s, transform 0.3s;
+        }
+        
+        .button-group {
+            margin-bottom: 20px;
+        }
+        
+        .button {
+            display: inline-block;
+            background-color: #4fb3d2; /* Light blue inspired by the phones in the image */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 0 10px;
+            transition: background-color 0.3s, box-shadow 0.3s;
+            box-shadow: 0 0 10px lightpink;
+        }
+    </style>
+</head>
+<body style="background-size: cover;background-attachment: fixed;">
+    <div class="container" style="padding: 50px;width: 100%;">
+        <h1>Phone Price Filter</h1>
+        <div class="button-group">
+            <a href="#under-15000" class="button">Under ₹15,000</a>
+            <a href="#under-20000" class="button">Under ₹20,000</a>
+            <a href="#under-25000" class="button">Under ₹25,000</a>
+            <a href="#above-25000" class="button">Above ₹25,000</a>
+        </div>
+        
+        <div id="under-15000" class="phone-list">
+            <h2>Phones Under ₹15,000</h2>
+            <div class="phone-item">
+                <h3>Moto G34 5G</h3>
+                <img src="Moto G34 5G 10,999.webp" alt="Moto G34 5G">
+                <p>₹10,999</p>
+            </div>
+            <div class="phone-item">
+                <h3>Redmi 13 5G</h3>
+                <img src="Redmi 13 5G 14999.webp" alt="Redmi 13 5G">
+                <p>₹14,999</p>
+            </div>
+            <div class="phone-item">
+                <h3>Samsung Galaxy M15 5G</h3>
+                <img src="Samsung Galaxy M15 5G 50MP 12999.jpg" alt="Samsung Galaxy M15 5G">
+                <p>₹12,999</p>
+            </div>
+        </div>
+        
+        <div id="under-20000" class="phone-list">
+            <h2>Phones Under ₹20,000</h2>
+            <div class="phone-item">
+                <h3>Motorola G84 5G</h3>
+                <img src="Motorola G84 5G 18,999.webp" alt="Motorola G84 5G">
+                <p>₹18,999</p>
+            </div>
+            <div class="phone-item">
+                <h3>OnePlus Nord CE 2 Lite 5G</h3>
+                <img src="Onepus nord ce 2 lite 5G 17,498.webp" alt="OnePlus Nord CE 2 Lite 5G">
+                <p>₹17,498</p>
+            </div>
+            <div class="phone-item">
+                <h3>Samsung Galaxy A15 5G</h3>
+                <img src="Samsung galaxy A15 5G 19,498.jpg" alt="Samsung Galaxy A15 5G">
+                <p>₹19,498</p>
+            </div>
+        </div>
+        
+        <div id="under-25000" class="phone-list">
+            <h2>Phones Under ₹25,000</h2>
+            <div class="phone-item">
+                <h3>OnePlus Nord CE 4</h3>
+                <img src="Oneplus nord ce4 24,998.webp" alt="OnePlus Nord CE 4">
+                <p>₹24,998</p>
+            </div>
+            <div class="phone-item">
+                <h3>Samsung Galaxy M35 5G</h3>
+                <img src="Samsung Galaxy M35 5G 21,498.webp" alt="Samsung Galaxy M35 5G">
+                <p>₹21,498</p>
+            </div>
+            <div class="phone-item">
+                <h3>Vivo Y200 5G</h3>
+                <img src="Vivo Y200 5g 22,999.jpg" alt="Vivo Y200 5G">
+                <p>₹22,999</p>
+            </div>
+        </div>
+        
+        <div id="above-25000" class="phone-list">
+            <h2>Phones Above ₹25,000</h2>
+            <div class="phone-item">
+                <h3>Oppo Reno 12 Pro 5G</h3>
+                <img src="Oppo Reno 12 pro 5G 36,999.webp" alt="Oppo Reno 12 Pro 5G">
+                <p>₹36,999</p>
+            </div>
+            <div class="phone-item">
+                <h3>OnePlus Nord 4 5G</h3>
+                <img src="OnePlus Nord 4 5G 32,998.webp" alt="OnePlus Nord 4 5G">
+                <p>₹32,998</p>
+            </div>
+            <div class="phone-item">
+                <h3>Vivo V30 5G</h3>
+                <img src="Vivo v30 5G 33,499.jpg" alt="Vivo V30 5G">
+                <p>₹33,499</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

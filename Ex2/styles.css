@@ -1,0 +1,143 @@
+
+
+.button:hover {
+    background-color:lightpink; /* Darker blue on hover */
+    box-shadow: 0 0 20px lightpink, 0 0 30px lightpink; /* Stronger glow effect on hover */
+}
+
+.phone-list {
+    display:none;
+}
+
+.phone-list h2 {
+    color:hotpink;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    letter-spacing: 2px; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    position: relative;
+    transition: color 0.3s, transform 0.3s; /* Smooth transition on hover effects */
+}
+
+.phone-list h2:hover{
+    color: #3498db; /* Changes text color on hover */
+    transform: scale(1.1); /* Slightly increases the size on hover */
+    text-shadow: 3px 3px 10px rgba(52, 152, 219, 0.7); /* More prominent shadow on hover */
+}
+h1:hover {
+    color: #3498db; /* Changes text color on hover */
+    transform: scale(1.1); /* Slightly increases the size on hover */
+    text-shadow: 3px 3px 10px rgba(52, 152, 219, 0.7); /* More prominent shadow on hover */
+}
+
+
+.phone-list.active {
+    display: block; 
+}
+
+.phone-item-container {
+    display: flex;
+    flex-wrap: wrap; /* Enables wrapping into rows */
+    justify-content: space-around;
+}
+
+.phone-item {
+    background-color: #f1f2f6; /* Light gray background similar to the image */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.phone-item:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.phone-item h3 {
+    margin: 10px 0;
+    color: #333;
+    font-size: 1.25rem;
+}
+
+.phone-item img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.phone-item p {
+    color: #666;
+    font-size: 1rem;
+}
+
+/* Ensure phones are arranged row-wise */
+.phone-item-container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.phone-item p {
+    font-weight: bold;
+    color: #2d3436; /* Darker text for prices */
+}
+
+/* Active section */
+#under-15000:target,
+#under-20000:target,
+#under-25000:target,
+#above-25000:target {
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    .button {
+        padding: 8px 15px; 
+        font-size: 14px; 
+    }
+
+    .phone-item {
+        width: 45%; /* Make each phone item take up about half the container width */
+    }
+
+    .phone-item-container {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 100%; /* Use full width on very small screens */
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 1.25rem; /* Further reduce main heading size */
+    }
+    
+    .button {
+        padding: 7px 12px; /* Adjust padding for smaller screens */
+        font-size: 12px; /* Reduce button font size */
+    }
+    
+    .phone-item {
+        width: 100%; /* Make phone items take up full width */
+    }
+
+    .phone-item-container {
+        flex-direction: column; /* Stack items vertically */
+        justify-content: center; /* Center phone items on smaller screens */
+    }
+}
