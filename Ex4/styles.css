@@ -1,0 +1,11 @@
+body
+{
+    background-image: url("bg.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.signin
+{
+    padding: 5%;
+    margin: 10%;
+}
