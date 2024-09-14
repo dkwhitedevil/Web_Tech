@@ -1,11 +1,55 @@
-body
-{
+body {
     background-image: url("bg.jpeg");
     background-size: cover;
     background-attachment: fixed;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+    overflow: hidden;
 }
-.signin
-{
-    padding: 5%;
-    margin: 10%;
+
+.container {
+    padding: 10px; /* Decreased padding */
 }
+
+.nav-tabs {
+    justify-content: center;
+    margin-bottom: 10px; /* Decreased margin */
+}
+
+.form-container {
+    padding: 10px; /* Decreased padding */
+}
+
+.form-floating {
+    margin-bottom: 10px; /* Decreased margin */
+}
+
+button[type="submit"] {
+    margin-top: 5px; /* Decreased margin */
+    padding: 8px; /* Reduced padding for smaller button */
+    font-size: 14px; /* Smaller font size */
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px; /* Further decreased padding on small screens */
+    }
+
+    .form-floating {
+        margin-bottom: 8px; /* Further decreased margin on small screens */
+    }
+}
+
+
