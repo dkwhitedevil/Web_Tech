@@ -4,118 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phone Price Filter</title>
+    <link rel="stylesheet" href="style.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-image: url("p2.jpeg");
-            background-size: cover;
-            background-attachment: fixed;
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
-            min-height: 100vh;
-            margin: 0;
-        }
-        
-        header {
-            background: rgba(0, 0, 0, 0.9);
-            padding: 10px 0;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        
-        .container {
-            padding: 30px;
-            border-radius: 15px;
-            margin-top: 20px;
-            max-width: 1200px;
-        }
-        
-        h1 {
-            color: hotpink;
-            margin-bottom: 20px;
-            font-size: 2rem;
-            letter-spacing: 2px;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-        }
-        
-        .phone-item img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        .nav-pills .nav-link.active {
-            background-color: #4fb3d2;
-        }
-        
-        .nav-pills .nav-link , header a{
-            color: #4fb3d2;
-            font-weight: bold;
-        }
-        
-        .nav-pills .nav-link:hover {
-            color: hotpink;
-        }
-        
-        .price-filter-section {
-            margin-top: 30px;
-        }
-        
-        .price-filter-section h2 {
-            margin-bottom: 20px;
-        }
-        
-        .phone-list .phone-item {
-            margin-bottom: 20px;
-        }
-        
-        .button-group a {
-            margin-right: 10px;
-        }
-    </style>
 </head>
 <body>
-    <!-- Bootstrap Header -->
-    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-            <span class="fs-4" color>Phones</span>
-        </a>
 
-        <ul class="nav nav-pills">
-            <li class="nav-item"><a href="#all-phones" class="nav-link">All Phones</a></li>
+    <!-- Header with Navigation -->
+    <header class="d-flex justify-content-between align-items-center py-3 px-4">
+        <!-- Align heading to the top-left -->
+        <a href="#" class="d-flex align-items-center mb-0 text-decoration-none">
+            <span class="fs-4 text-uppercase">Phones</span>
+        </a>
+    
+        <!-- Navigation remains centered -->
+        <ul class="nav nav-pills mx-auto">
             <li class="nav-item"><a href="#under-15000" class="nav-link">Under ₹15,000</a></li>
             <li class="nav-item"><a href="#under-20000" class="nav-link">Under ₹20,000</a></li>
             <li class="nav-item"><a href="#under-25000" class="nav-link">Under ₹25,000</a></li>
             <li class="nav-item"><a href="#above-25000" class="nav-link">Above ₹25,000</a></li>
         </ul>
     </header>
+    
 
     <!-- Phone Filter Section -->
     <div class="container">
-        <h1>Phone Price Filter</h1>
-        
         <div id="under-15000" class="phone-list">
             <h2>Phones Under ₹15,000</h2>
             <div class="row">
                 <div class="col-md-4 phone-item">
                     <img src="Moto G34 5G 10,999.webp" alt="Moto G34 5G">
-                    <div class="p-3">
-                        <h3>Moto G34 5G</h3>
-                        <p>₹10,999</p>
-                    </div>
+                    <h3>Moto G34 5G</h3>
+                    <p>₹10,999</p>
                 </div>
                 <div class="col-md-4 phone-item">
                     <img src="Redmi 13 5G 14999.webp" alt="Redmi 13 5G">
-                    <div class="p-3">
-                        <h3>Redmi 13 5G</h3>
-                        <p>₹14,999</p>
-                    </div>
+                    <h3>Redmi 13 5G</h3>
+                    <p>₹14,999</p>
                 </div>
                 <div class="col-md-4 phone-item">
                     <img src="Samsung Galaxy M15 5G 50MP 12999.jpg" alt="Samsung Galaxy M15 5G">
-                    <div class="p-3">
-                        <h3>Samsung Galaxy M15 5G</h3>
-                        <p>₹12,999</p>
-                    </div>
+                    <h3>Samsung Galaxy M15 5G</h3>
+                    <p>₹12,999</p>
                 </div>
             </div>
         </div>
@@ -125,24 +55,18 @@
             <div class="row">
                 <div class="col-md-4 phone-item">
                     <img src="Motorola G84 5G 18,999.webp" alt="Motorola G84 5G">
-                    <div class="p-3">
-                        <h3>Motorola G84 5G</h3>
-                        <p>₹18,999</p>
-                    </div>
+                    <h3>Motorola G84 5G</h3>
+                    <p>₹18,999</p>
                 </div>
                 <div class="col-md-4 phone-item">
                     <img src="Onepus nord ce 2 lite 5G 17,498.webp" alt="OnePlus Nord CE 2 Lite 5G">
-                    <div class="p-3">
-                        <h3>OnePlus Nord CE 2 Lite 5G</h3>
-                        <p>₹17,498</p>
-                    </div>
+                    <h3>OnePlus Nord CE 2 Lite 5G</h3>
+                    <p>₹17,498</p>
                 </div>
                 <div class="col-md-4 phone-item">
                     <img src="Samsung galaxy A15 5G 19,498.jpg" alt="Samsung Galaxy A15 5G">
-                    <div class="p-3">
-                        <h3>Samsung Galaxy A15 5G</h3>
-                        <p>₹19,498</p>
-                    </div>
+                    <h3>Samsung Galaxy A15 5G</h3>
+                    <p>₹19,498</p>
                 </div>
             </div>
         </div>
@@ -152,24 +76,18 @@
             <div class="row">
                 <div class="col-md-4 phone-item">
                     <img src="Oneplus nord ce4 24,998.webp" alt="OnePlus Nord CE 4">
-                    <div class="p-3">
-                        <h3>OnePlus Nord CE 4</h3>
-                        <p>₹24,998</p>
-                    </div>
+                    <h3>OnePlus Nord CE 4</h3>
+                    <p>₹24,998</p>
                 </div>
                 <div class="col-md-4 phone-item">
                     <img src="Samsung Galaxy M35 5G 21,498.webp" alt="Samsung Galaxy M35 5G">
-                    <div class="p-3">
-                        <h3>Samsung Galaxy M35 5G</h3>
-                        <p>₹21,498</p>
-                    </div>
+                    <h3>Samsung Galaxy M35 5G</h3>
+                    <p>₹21,498</p>
                 </div>
                 <div class="col-md-4 phone-item">
                     <img src="Vivo Y200 5g 22,999.jpg" alt="Vivo Y200 5G">
-                    <div class="p-3">
-                        <h3>Vivo Y200 5G</h3>
-                        <p>₹22,999</p>
-                    </div>
+                    <h3>Vivo Y200 5G</h3>
+                    <p>₹22,999</p>
                 </div>
             </div>
         </div>
@@ -179,30 +97,29 @@
             <div class="row">
                 <div class="col-md-4 phone-item">
                     <img src="Oppo Reno 12 pro 5G 36,999.webp" alt="Oppo Reno 12 Pro 5G">
-                    <div class="p-3">
-                        <h3>Oppo Reno 12 Pro 5G</h3>
-                        <p>₹36,999</p>
-                    </div>
+                    <h3>Oppo Reno 12 Pro 5G</h3>
+                    <p>₹36,999</p>
                 </div>
                 <div class="col-md-4 phone-item">
                     <img src="OnePlus Nord 4 5G 32,998.webp" alt="OnePlus Nord 4 5G">
-                    <div class="p-3">
-                        <h3>OnePlus Nord 4 5G</h3>
-                        <p>₹32,998</p>
-                    </div>
+                    <h3>OnePlus Nord 4 5G</h3>
+                    <p>₹32,998</p>
                 </div>
                 <div class="col-md-4 phone-item">
                     <img src="Vivo v30 5G 33,499.jpg" alt="Vivo V30 5G">
-                    <div class="p-3">
-                        <h3>Vivo V30 5G</h3>
-                        <p>₹33,499</p>
-                    </div>
+                    <h3>Vivo V30 5G</h3>
+                    <p>₹33,499</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <!-- Footer -->
+    <footer>
+        <p>Come Again....🔥🔥</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>

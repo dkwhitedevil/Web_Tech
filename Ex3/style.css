@@ -1,53 +1,105 @@
 
-body {
-    background-image: url("pic1.jpeg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-color: #f0f4f8;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
+        body {
+            background-image: url("p3.jpeg");
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding-top: 70px;
+        }
 
-/* Styling the header */
-.header {
-    background-color: #4fb3d2;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    border-radius: 20px;
-}
+        header {
+            background: rgba(0, 0, 0, 0.85);
+            padding: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
 
-.header h1 {
-    font-size: 2rem;
-}
+        header a {
+            color: #fff;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
 
-/* Ordered list and links */
-ol {
-    list-style-position: inside;
-    padding-left: 0;
-}
+        .nav-pills .nav-link {
+            color: #fff;
+            font-weight: bold;
+            margin-right: 15px;
+            transition: color 0.3s ease-in-out;
+            border-radius: 5px;
+        }
 
-li {
-    margin-bottom: 10px;
-    font-size: 2rem;
-    color:#4fb3d2;
-}
+        .nav-pills .nav-link:hover, .nav-pills .nav-link.active {
+            background-color: hotpink;
+            color: #fff;
+        }
 
-a {
-    text-decoration: none;
-    color:black;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
+        .container {
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            margin-top: 40px;
+            max-width: 600px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
 
-a:hover {
-    color: gold;
-}
+        h2 {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 1.8rem;
+            border-bottom: 2px solid hotpink;
+            padding-bottom: 10px;
+        }
 
-/* Container for centering the content */
-.content {
-    text-align: center;
-}
+        .phone-item {
+            margin-bottom: 30px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            border: 2px solid transparent;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .phone-item img {
+            width: 250px;
+            max-width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .phone-item:hover {
+            transform: translateY(-10px);
+            border: 2px solid hotpink;
+        }
+
+        .phone-item h3 {
+            font-size: 1.3rem;
+            margin-top: 15px;
+            color: hotpink;
+        }
+
+        .phone-item p {
+            color: #555;
+            font-size: 1.1rem;
+        }
+
+        .phone-item :hover  {
+            transform: scale(1.15);
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.85);
+            padding: 20px 0;
+            text-align: center;
+            color: #fff;
+            margin-top: 50px;
+            position: relative;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
