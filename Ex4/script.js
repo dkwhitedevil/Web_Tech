@@ -79,7 +79,7 @@ document.getElementById('signinForm').addEventListener('submit', function(e) {
     if (user) {
         alert('Login successful!');
         // Redirect to next page (adjust this path accordingly)
-        window.location.href = "Ex2/Ex2_CascadingSS.html";
+        window.location.href = "https://dinesh200512.github.io/CSS";
     } else {
         alert('Invalid email or password. Please try again.');
     }
