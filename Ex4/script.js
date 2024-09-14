@@ -79,7 +79,7 @@ document.getElementById('signinForm').addEventListener('submit', function(e) {
     if (user) {
         alert('Login successful!');
         // Redirect to next page (adjust this path accordingly)
-        window.location.href = "C:/Users/91637/OneDrive/Documents/devil/sa/Web_Tech/Ex2/Ex2_CascadingSS.html";
+        window.location.href = "Ex2/Ex2_CascadingSS.html";
     } else {
         alert('Invalid email or password. Please try again.');
     }
