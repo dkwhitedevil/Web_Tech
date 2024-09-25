@@ -36,6 +36,15 @@ li {
     color:#4fb3d2;
 }
 
+#e1
+{
+    font-weight: bold;
+    color:black;
+}
+#e1:hover
+{
+    color:gold;
+}
 a {
     text-decoration: none;
     color:black;
