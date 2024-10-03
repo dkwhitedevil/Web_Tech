@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+
+    <servlet>
+        <servlet-name>MyServe</servlet-name>
+        <servlet-class>HelloWorld</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>MyServe</servlet-name>
+        <url-pattern>/fun</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>BMICalc</servlet-name>
+        <servlet-class>BMI</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>BMICalc</servlet-name>
+        <url-pattern>/bmi</url-pattern>
+    </servlet-mapping>
+
+</web-app>
