@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PhoneDetails>
+    <Phone>
+        <ID>1</ID>
+        <Brand>Apple</Brand>
+        <Model>iPhone 15</Model>
+        <Price>999.99</Price>
+    </Phone>
+    <Phone>
+        <ID>2</ID>
+        <Brand>Samsung</Brand>
+        <Model>Galaxy S23</Model>
+        <Price>799.99</Price>
+    </Phone>
+    <Phone>
+        <ID>3</ID>
+        <Brand>Google</Brand>
+        <Model>Pixel 8</Model>
+        <Price>699.99</Price>
+    </Phone>
+    <Phone>
+        <ID>4</ID>
+        <Brand>OnePlus</Brand>
+        <Model>OnePlus 11</Model>
+        <Price>799.99</Price>
+    </Phone>
+    <Phone>
+        <ID>5</ID>
+        <Brand>Xiaomi</Brand>
+        <Model>Mi 13</Model>
+        <Price>499.99</Price>
+    </Phone>
+</PhoneDetails>

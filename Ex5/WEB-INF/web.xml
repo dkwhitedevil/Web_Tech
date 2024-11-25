@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+
+    <servlet>
+        <servlet-name>MyServe</servlet-name>
+        <servlet-class>HelloWorld</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>MyServe</servlet-name>
+        <url-pattern>/fun</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>e2</servlet-name>
+        <servlet-class>PhoneServlet1</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>e2</servlet-name>
+        <url-pattern>/PhoneServlet1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>e3</servlet-name>
+        <servlet-class>PhoneServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>e3</servlet-name>
+        <url-pattern>/PhoneServlet</url-pattern>
+    </servlet-mapping>
+
+     <servlet>
+        <servlet-name>e4</servlet-name>
+        <servlet-class>Phone</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>e4</servlet-name>
+        <url-pattern>/Phone</url-pattern>
+    </servlet-mapping>
+
+     <servlet>
+        <servlet-name>e5</servlet-name>
+        <servlet-class>count</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>e5</servlet-name>
+        <url-pattern>/count</url-pattern>
+    </servlet-mapping>
+
+
+
+</web-app>

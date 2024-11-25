@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Details</title>
+</head>
+<body>
+    <h1>Enter Phone Details</h1>
+    <form action="PhoneServlet" method="post">
+        <label for="brand">Phone Brand:</label>
+        <input type="text" id="brand" name="brand" required><br><br>
+        
+        <label for="model">Phone Model:</label>
+        <input type="text" id="model" name="model" required><br><br>
+        
+        <label for="price">Price (USD):</label>
+        <input type="number" id="price" name="price" required><br><br>
+        
+        <!-- Hidden field for session tracking -->
+        <input type="hidden" name="hiddenSessionId" value="<%= request.getSession().getId() %>">
+        
+        <input type="submit" value="Add Phone">
+    </form>
+</body>
+</html>
