@@ -1,42 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Handling</title>
-    <script src="scripts.js" defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Phone Interactive Experience</title>
+	<link rel="stylesheet" href="phones.css">
 </head>
-<body onclick="changebg()">
-    <center>
-        <h1>Event Handling</h1>
+<body>
+	<h1>Interactive Phone Experience</h1>
+	<div class="container">
+    	<button id="timeButton" class="time-btn" onclick="time()">Show Current Time</button>
+    	<p id="timeDisplay" class="time-display"></p>
+	</div>
 
-        <input type="text" id="timeBox" style="text-align: center;" />
-        <button id="timeButton" onclick="displayTime()">Show Current Time</button>
-
-        <h2>Voter Eligibility Check</h2>
-        <form id="voterForm" onsubmit="return checkEligibility(event)">
-            <label for="name">Name:</label>
-            <input type="text" id="name" required />
-            <br/><br/>
-            <label for="age">Age:</label>
-            <input type="number" id="age" required />
-            <br/><br/>
-            <button type="submit">Check Eligibility</button>
-        </form>
-
-        <p id="result"></p>
-
-        <h2>Hovering</h2>
-        <div id="gifContainer">
-            <img src="Iron Man Snap GIF - Iron Man Snap Avengers - Discover & Share GIFs.gif" alt="Interactive GIF" id="gifElement" style="width: 300px; height: auto;">
-            <div id="message">Hover over the GIF!</div>
-        </div>
-
-        <h2>Sliding</h2>
-        <div class="d1">
-            <div id="a1" >Avengers</div>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6cUCy8sINtl1AMDqHv_2JTemTH0MbRWJ5Eg&s" alt="Avengers Image" onmouseenter="document.getElementById('a1').style.display='block'" onmouseleave="document.getElementById('a1').style.display='none'">
-        </div>
-    </center>
+	<div class="cursor-container">
+    	<h2 id="cursorStatus">Explore our Phone Collection!</h2>
+    	<div class="box">
+        	<p id="hoverParagraph" class="hover-paragraph">Hover over me to see phone details!</p>
+    	</div>
+	</div>
+	<div class="image-container">
+    	<p id="hoverText">Kids phone</p>
+    	<img id="hoverImage" src="phone1.jpg" alt="Phone Image" />
+	</div>
+	<script src="phones.js"></script>
 </body>
 </html>
